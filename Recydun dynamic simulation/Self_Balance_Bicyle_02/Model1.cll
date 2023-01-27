@@ -1,0 +1,131 @@
+---_Model_Struct_---:90501
+ 100 10 1 2 0 1 2 3 1 2
+ 0 0 
+1 
+    -1.0000000000e+00 
+755
+755
+755
+C:\Users\Alan\OneDrive - University of Leeds\Desktop\self_balance_car\main\Self_Balance_Bicyle_02
+j:\Program Files\FunctionBay, Inc\RecurDyn V9R5\Toolkits\Colink\RecurDynZIPCIO.dll
+j:\Program Files\FunctionBay, Inc\RecurDyn V9R5\Toolkits\Colink\DRVCAPI.dll
+ 0
+---_Block_Struct_---
+---_Block_Seq_ID_=_0
+Constant1
+Constant
+ 1 1 1004 0 
+ 1 0 1 
+ Constant
+ 3
+ 0.
+ Out1
+---_Block_Seq_ID_=_1
+Scope1
+Scope
+ 2 8 4001 0 
+ 0 1 1 
+ Demux1.Out1
+ OutX
+---_Block_Seq_ID_=_2
+Sum2
+Sum1
+ 3 2 1104 0 
+ 2 2 1 
+ Signs
+ 3
+ -+
+ SampleTime
+ 2
+ 0
+ Constant1.Out1
+ Demux1.Out1
+ Out1
+---_Block_Seq_ID_=_3
+RecurDyn1
+RecurDyn
+ 4 6 3911 0 
+ 1 1 1 
+ SampleTime
+ 3
+ -1
+ Sum3.Out1
+ Out1
+---_Block_Seq_ID_=_4
+Demux1
+Demux
+ 5 7 3901 0 
+ 1 1 2 
+ Number
+ 2
+ 2
+ RecurDyn1.Out1
+ Out1
+ Out2
+---_Block_Seq_ID_=_5
+Sum3
+Sum1@Subsystem1
+ 7 5 1104 0 
+ 2 3 1 
+ Signs
+ 4
+ ---
+ SampleTime
+ 2
+ 0
+ Gain6.Out1
+ Gain5.Out1
+ Gain7.Out1
+ Out1
+---_Block_Seq_ID_=_6
+Gain5
+Gain4@Subsystem1
+ 8 3 1101 0 
+ 2 1 1 
+ Gain
+ 4
+ 0.3
+ SampleTime
+ 2
+ 0
+ Demux1.Out2
+ Out1
+---_Block_Seq_ID_=_7
+Gain6
+Gain5@Subsystem1
+ 9 3 1101 0 
+ 2 1 1 
+ Gain
+ 3
+ 2.
+ SampleTime
+ 2
+ 0
+ Sum2.Out1
+ Out1
+---_Block_Seq_ID_=_8
+Gain7
+Gain6@Subsystem1
+ 10 4 1101 0 
+ 2 1 1 
+ Gain
+ 8
+ 1.e-002
+ SampleTime
+ 2
+ 0
+ Integrator2.Out1
+ Out1
+---_Block_Seq_ID_=_9
+Integrator2
+Integrator1@Subsystem1
+ 11 3 2002 0 
+ 2 1 1 
+ Initial
+ 3
+ 0.
+ Abs
+ 3
+ -1
+ Sum2.Out1
+ Out1

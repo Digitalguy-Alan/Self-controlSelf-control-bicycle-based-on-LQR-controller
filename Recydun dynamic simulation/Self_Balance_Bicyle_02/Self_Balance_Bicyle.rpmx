@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<AnalysisResultFiles rpmxver="1000" rdsolverver="9.5.10442.0" os="WINDOWS" filename="Self_Balance_Bicyle_02\Self_Balance_Bicyle">
+    <Command ID="1" type="Dynamic" StartTime="0" text="sim/dyn, end = 140, step = 300">
+        <!--File type="rplt" path=".\Self_Balance_Bicyle.rplt" datatype="New"-->
+        <File type="rad" path=".\Self_Balance_Bicyle.rad" datatype="New" />
+        <File type="ran" path=".\Self_Balance_Bicyle.ran" datatype="New" />
+    </Command>
+</AnalysisResultFiles>

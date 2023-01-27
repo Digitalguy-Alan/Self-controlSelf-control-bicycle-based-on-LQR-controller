@@ -1,0 +1,39 @@
+============================================ 
+============================================ 
+==                                        == 
+==        RecurDyn CoLink Toolkit         == 
+==               Version 5.0              == 
+==                                        == 
+============================================ 
+============================================ 
+
+*  Information of To Script Variable Block.
+** Number of To Script Variable Block = 0
+
+*  Check sample time of all blocks.
+** Maximum step size isn't changed.
+
+*  Algebraic Equation Information
+** Number of algebraic equation = 2
+** State #  1 :                          Demux, Port #  1, Sequence #  1
+** State #  2 :                          Demux, Port #  2, Sequence #  1
+
+*  CoLink System States 
+** Number of Plant Input           = 1 
+** Number of Plant Output          = 2 
+** Number of Algebraic Equation    = 2 
+** Number of Differential Equation = 1 
+
+*  Jacobian Method is B.
+
+*  Jacobian Matrix at first 
+ 1.00000e+00 0.00000e+00 0.00000e+00 2.00000e+00 3.00000e-01 1.00000e-02
+ 0.00000e+00 1.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+ 0.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+ 0.00000e+00 -1.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00 0.00000e+00
+ 0.00000e+00 0.00000e+00 -1.00000e+00 0.00000e+00 1.00000e+00 0.00000e+00
+ 0.00000e+00 0.00000e+00 0.00000e+00 -1.00000e+00 0.00000e+00 -0.00000e+00
+
+============================================= 
+  SOLVER-PROCESSING IS SUCCESSFULLY FINISHED
+============================================= 
